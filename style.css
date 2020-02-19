@@ -18,7 +18,7 @@
   body {
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(120,120,125);
-    margin: 2rem; 
+    margin: 2rem;
   }
 
    /* this overrides the default padding and margin on gridlex elements */
@@ -28,13 +28,23 @@
 
   /* ------------- Utility Classes --------------  */
 
+  .box      {
+    border: 1px solid grey;
+    width:  150px;
+    height: 150px;
+  }
+  .blogpost-box {
+    border: 1px solid grey;
+    width:  300px;
+    height: 250px;
+  }
   .left     {  text-align: left;     }
   .right    {  text-align: right;    }
   .centered {  text-align: center;   }
 
   .padded   {  padding: 1% 5% 3% 3%;    }
   .padded-1 {  padding: 1rem;  }
-  .padded-2 {  padding: 2rem;  }
+  .padded-2 {  padding: 2rem 0rem;  } /*-- nur oben u unten, links und rechts auf line --*/
   .padded-3 {  padding: 3rem;  }
   .padded-destinations { padding: 5% 1%;}
 
@@ -43,7 +53,7 @@
   .tall-50  {  min-height: 50vh;   }
   .tall-100 {  min-height: 100vh;  }
 
-  .dark-bg      {  background-color: #043927; color:rgb(241, 242, 246) ;  }
+  .dark-bg      {  background-color: #444c38; color: #f7f1e3;  }
   .light-bg     {  background-color: rgb(241, 242, 246);  color: rgb(60,60,65)}
   .featured-bg  {  background-color: #043927; color: rgb(241, 242, 246); margin: 2% 5%;    }
 
@@ -73,6 +83,7 @@
   h2  { font-size: 2.2rem;  }
   h3  { font-size: 2.0rem;  }
   h4  { font-size: 1.4rem;  }
+  h5  { font-size: 0.8rem;  }
   p   { font-size: 1rem; line-height: 2rem; }
 
   p, ul {
@@ -99,7 +110,7 @@
 .button-solid,
 .button-inverted {
   text-decoration: none;
-  color: #e67e22;
+  color: #444c38;
   border: 1px solid;
   padding: 0.6rem 2rem;
   margin-top: 1rem;
@@ -154,7 +165,7 @@ nav a {
 
 header.fixed {
   position: fixed;
-  background-color: #f9ca24;
+  background-color: white;
   top:0;
   left:0;
   right:0;
@@ -164,7 +175,7 @@ header.fixed {
   text-align: center;
 }
 .bump-for-header {
-  min-height: 4rem;
+  min-height: 1rem;
 }
 
 /* ----------------- Footer -------------------- */

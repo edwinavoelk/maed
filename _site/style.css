@@ -1,4 +1,4 @@
-/*-----  CSS RESET  ------*/
+/*-----------------  CSS RESET  -------------------*/
 
   * {
     padding: 0;
@@ -50,7 +50,7 @@
   .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
 
-  /* General typography */
+  /* ------------ General typography --------------*/
 
   #maed-logo { font-family: 'Lora', sans-serif; }
 
@@ -126,7 +126,7 @@
 
 
 
-/* Headers and footers */
+/*-------------- Headers and footers ---------------*/
 
 header {
   padding: 2% 5%;
@@ -140,7 +140,7 @@ nav a {
 }
 
 
-/* Fixed Header Option */
+/* ---------------Fixed Header Option ---------------*/
 
 header.fixed {
   position: fixed;
@@ -156,3 +156,60 @@ header.fixed {
 .bump-for-header {
   min-height: 4rem;
 }
+
+/* ----------------- Footer -------------------- */
+
+footer .info {
+  padding-right: 3rem;
+}
+
+footer nav a {
+  display:block;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+}
+
+
+  /* --------------- BANNERS ------------------*/
+.banner {
+  background-image: url('images/IMG_1251_3.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+}
+
+.fixed {
+  background-attachment: fixed;
+}
+
+.absolute-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background: none;
+}
+
+.bg-image {
+  background-image: url('#');
+  background-size: cover;
+  background-position: center;
+  min-height: 15rem;
+
+}
+
+img.clickable-box.bg-image {
+height: 100%;
+}
+
+/* This media query kicks into action at the gridlex sm breakpoint */
+@media(max-width:768px) {
+
+  .mob-hide {
+    display: none;
+  }
+
+  /* end media query */

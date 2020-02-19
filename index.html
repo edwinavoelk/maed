@@ -3,11 +3,18 @@ layout: default
 title: MAED
 countries:
   - name: germany
-    image-path: images/germany.jpg
+    image-path: images/tajmahal.jpg
   - name: india
-    image-path: images/india.jpg
+    image-path: images/tajmahal.jpg
   - name: srilanka
-    image-path: images/srilanka.jpg
+    image-path: images/tajmahal.jpg
+  - name: hungary
+    image-path: images/tajmahal.jpg
+  - name: peru
+    image-path: images/tajmahal.jpg
+  - name: chile
+    image-path: images/tajmahal.jpg
+
 latest-blogpost:
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ---
@@ -38,7 +45,7 @@ latest-blogpost:
 
 <div class="grid-spacebetween">
 {% for item in page.countries %}
-<div class="col-2">
+<div class="col-2-spacebetween">
   <div class="">
       {{ item.image-path }}
   </div>
@@ -52,17 +59,24 @@ latest-blogpost:
 </div>
 </section>
 
+
+<section class="padded-3">
+
+</section>
   <!-- - - - - - - CTA USEFUL RESSOURCES  - - - - - - - -  -->
 
 <section class="grid padded-3">
 
   <div class="col-4 centered ">
+    <h4> This is a useful document for you</h4>
     <a href="#" class="button"> Ressource 1</a>
   </div>
   <div class="col-4 centered">
+    <h4> This is a useful document for you</h4>
     <a href="#" class="button"> Ressource 2</a>
   </div>
   <div class="col-4 centered">
+    <h4> This is a useful document for you</h4>
     <a href="#" class="button"> Ressource 3</a>
   </div>
 

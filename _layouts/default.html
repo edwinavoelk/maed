@@ -6,9 +6,9 @@
     <meta charset="utf-8">
 
     <!-- Meta data for SEO purposes. -->
-    <title> MAED </title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title> {{page.title}} </title>
+    <meta name="description" content="{{page.meta-description}}">
+    <meta name="keywords" content="{{page.meta-keywords}}">
 
     <!-- meta data to tell the browser that your devide is responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,11 +18,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
     <!--  Social media sharing META Tags -->
-    <meta property="og:title" content="MAED">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="/">
-    <meta name="twitter:card" content="">
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:description" content="{{page.meta-description}}">
+    <meta property="og:image" content="{{page.featured-image_path}}">
+    <meta property="og:url" content="{{page.url}}">
+    <meta name="twitter:card" content="{{page.meta-description}}">
     <meta name="og:site_name" content="<!-- ADD SITE NAME HERE -->">
 
   <!-- end of meta tags -->
@@ -52,15 +52,7 @@
 </head>
 <body>
 
-    {{page.title}}
-
-<section class="banner grid-center fixed">
-  <div class="col-6_sm-12-middle centered">
-    <h2 class="big-bold"> This is a heading </h2>
-    <h3 class="not-bold"> This is a sub-heading </h3>
-  </div>
-</section>
-
+    {{page.content}}
 
 </body>
 </html>

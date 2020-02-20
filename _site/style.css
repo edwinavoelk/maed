@@ -19,7 +19,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(120,120,125);
     margin: 2rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
    /* this overrides the default padding and margin on gridlex elements */
@@ -54,26 +54,54 @@
     background-image: url('#');
     background-size: cover;
     background-position: center;
-
-
   }
 
- section.countries .bg-image {
-   padding: 1rem;
-   height: 200px;
-   border-radius: 2px;
 
- }
+  .box  {
+  background-color: white;
+  max-width: 30%;
+
+  /* horizontally center */
+  margin: 1rem auto;
+  }
+
+.box > .bg-image {
+  width: 100%;
+  }
+
+.box > span {
+  display: block;
+
+  /* pad around text */
+  padding: 0.5rem 1rem;
+  }
+
+.square {
+  /*  any set width  */
+  width: 90%;
+  }
+
+.square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  /* Relies on https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
+  }
+  section.countries .bg-image {
+     padding: 0rem;
+     height: 200px;
+     border-radius: 2px;
+
+   }
 
  section.countries .box {
-   max-width: 80%;
+   max-width: 90%;
    width:auto;
    height: auto;
    background-position: cover;
    border-radius: 2px;
    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
- }
-
+ } 
 
   .capped-width { width: 80%; margin: auto;}
 

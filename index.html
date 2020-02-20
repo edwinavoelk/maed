@@ -47,10 +47,10 @@ latest-blogpost:
   <!-- - - - - - - CTA COUNTRIES  - - - - - - - -  -->
 <section class="countries grid-spacebetween">
 {% for item in page.countries %}
-<a href="/{{item.name}}" class="col-2 blogpost-box">
+<a href="/{{item.name}}" class="col-2 blogpost-box box">
   <div class="box">
-    <div class="bg-image" style="background-image: url('{{ item.image-path }}')"></div>
-    <p id="countries-center">{{ item.name }}</p>
+    <div class="bg-image square" style="background-image: url('{{ item.image-path }}')"></div>
+    <span id="countries-center">{{ item.name }}</span>
   </div>
 </a>
 

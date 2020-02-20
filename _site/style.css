@@ -19,6 +19,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(120,120,125);
     margin: 2rem;
+    margin-top: 6rem;
   }
 
    /* this overrides the default padding and margin on gridlex elements */

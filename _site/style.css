@@ -29,12 +29,12 @@
   /* ------------- Utility Classes --------------  */
 
   .box      {
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     width:  150px;
     height: 150px;
   }
   .blogpost-box {
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     width:  300px;
     height: 250px;
   }
@@ -46,8 +46,31 @@
   .padded-1 {  padding: 1rem;  }
   .padded-2 {  padding: 2rem 0rem;  } /*-- nur oben u unten, links und rechts auf line --*/
   .padded-3 {  padding: 3rem;  }
-  .padded-right { padding: 2.5rem 3rem 1rem 1rem; } /*-- nur rechts --*/
+  .padded-right { padding: 3.5rem 3rem 1rem 1rem; } /*-- nur rechts --*/
   .padded-destinations { padding: 5% 1%;}
+
+  .bg-image {
+    background-image: url('#');
+    background-size: cover;
+    background-position: center;
+
+  }
+
+ section.countries .bg-image {
+   padding: 1rem;
+   height: 200px;
+   border-radius: 2px;
+
+ }
+
+ section.countries .box {
+   max-width: 80%;
+   width:auto;
+   height: auto;
+   background-position: cover;
+   border-radius: 2px;
+ }
+
 
   .capped-width { width: 80%; margin: auto;}
 
@@ -127,10 +150,11 @@
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .button:hover {
-  color: rgb(60, 60, 60);
+  color: #aab6a2;
 }
 
 .button.inverted {   /* this is for a button on a dark background */
@@ -222,14 +246,6 @@ footer h3 {
   right: 0;
   margin: 0;
   background: none;
-}
-
-.bg-image {
-  background-image: url('#');
-  background-size: cover;
-  background-position: center;
-  min-height: 15rem;
-
 }
 
 img.clickable-box.bg-image {

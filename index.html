@@ -39,24 +39,22 @@ latest-blogpost:
   </div>
 </section>
 
+<section class="padded-3">
+
+</section>
+
 
   <!-- - - - - - - CTA COUNTRIES  - - - - - - - -  -->
-<section class="">
-
-<div class="grid-spacebetween">
+<section class="countries grid-spacebetween">
 {% for item in page.countries %}
-<div class="col-2-spacebetween">
-  <div class="">
-      {{ item.image-path }}
-  </div>
 <div class="col-2">
-      {{ item.name }}
-</div>
+  <div class="box">
+    <div class="bg-image" style="background-image: url('{{ item.image-path }}')"></div>
+    <p>{{ item.name }}</p>
+  </div>
 </div>
 
 {% endfor %}
-
-</div>
 </section>
 
 
@@ -65,7 +63,7 @@ latest-blogpost:
 </section>
   <!-- - - - - - - CTA USEFUL RESSOURCES  - - - - - - - -  -->
 
-<section class="grid padded-3">
+<section class="grid padded-3 light-bg">
 
   <div class="col-4 centered ">
     <h4> This is a useful document for you</h4>
@@ -84,7 +82,7 @@ latest-blogpost:
 
   <!-- - - - - - - POLARSTEP PLUG IN  - - - - - - - -  -->
 
-<section class="light-bg padded-2">
+<section class="padded-2 dark-bg">
   <div class="box">
 
   </div>
@@ -94,10 +92,11 @@ latest-blogpost:
 
   <!-- - - - - - - CTA LATEST BLOGPOSTS 1  - - - - - - - -  -->
 
-<section class="grid padded-2">
+<section class="grid padded">
+
   <a href="#" class="col-6 blogpost-box grid">
-    <div class="col-4 padded-1 bg-image">
-      <h5> # 1 </h5>
+    <div class="col-4 padded bg-image">
+      <p> NO. 1 </p>
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
@@ -107,8 +106,8 @@ latest-blogpost:
   </a>
 
   <a href="#" class="col-6 blogpost-box grid">
-    <div class="col-4 padded-1 bg-image">
-      <h5> # 1 </h5>
+    <div class="col-4 padded bg-image">
+      <p> NO. 1 </p>
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
@@ -120,10 +119,10 @@ latest-blogpost:
 
 <!-- - - - - - - CTA LATEST BLOGPOSTS 2  - - - - - - - -  -->
 
-<section class="grid padded-2">
+<section class="grid padded">
   <a href="#" class="col-6 blogpost-box grid">
-    <div class="col-4 padded-1 bg-image">
-      <h5> # 1 </h5>
+    <div class="col-4 padded bg-image">
+      <p> NO. 1 </p>
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
@@ -133,8 +132,8 @@ latest-blogpost:
   </a>
 
   <a href="#" class="col-6 blogpost-box grid">
-    <div class="col-4 padded-1 bg-image">
-      <h5> # 1 </h5>
+    <div class="col-4 padded bg-image">
+      <p> NO. 1 </p>
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 

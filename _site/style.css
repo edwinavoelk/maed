@@ -79,9 +79,9 @@
   .tall-50  {  min-height: 50vh;   }
   .tall-100 {  min-height: 100vh;  }
 
-  .dark-bg      {  background-color: #444c38; color: #f7f1e3;  }
+  .dark-bg      {  background-color: #3e432e; color: #f7f1e3;  }
   .light-bg     {  background-color: rgb(241, 242, 246);  color: rgb(60,60,65)}
-  .featured-bg  {  background-color: #043927; color: rgb(241, 242, 246); margin: 2% 5%;    }
+  .featured-bg  {  background-color: #3e432e; color: rgb(241, 242, 246); margin: 2% 5%;    }
 
   .truncate { overflow: hidden; text-overflow: ellipsis; max-height: 12rem; }
 

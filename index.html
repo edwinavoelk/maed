@@ -33,7 +33,7 @@ latest-blogpost:
 
 <section class="grid-centered padded centered negative-margin">
   <div class="col-8_sm-12">
-    <h2> Oh hello! Nice to sweet you! </h2>
+    <h2> aloha! </h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
       dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
@@ -45,12 +45,12 @@ latest-blogpost:
 
 
   <!-- - - - - - - CTA COUNTRIES  - - - - - - - -  -->
-<section class="countries grid-spacebetween">
+<section class="countries grid-spacebetween" data-aos="fade-up">
 {% for item in page.countries %}
 <a href="/{{item.name}}" class="col-4_sm-12">
-  <div class="box">
+  <div class="box blogpost-box">
     <div class="bg-image square" style="background-image: url('{{ item.image-path }}')"></div>
-    <div class="padded centered blogpost-box">
+    <div class="padded centered">
       <span> {{ item.name }} </span>
     </div>
   </div>
@@ -68,8 +68,8 @@ latest-blogpost:
   <!-- - - - - - - POLARSTEP PLUG IN  - - - - - - - -  -->
 
 <section class="padded-2">
-  <div class="box centered">
-    <p> POLARSTEP PLUG IN</p>
+  <div class="centered dark-bg padded">
+    <iframe width="550" height="380" src="https://www.polarsteps.com/MatthiasRitschel/2773046-asia-is-coming?embed=true"></iframe>
   </div>
 </section>
 
@@ -84,7 +84,6 @@ latest-blogpost:
     <p class="mob-hide">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
       dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <a href="about.html" class="button"> Come say hello</a>
-      </div>
   </div>
 </section>
 

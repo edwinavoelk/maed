@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-layout
 title: Escape into India's nature
 image-path: /images/tajmahal.jpg
 category: india

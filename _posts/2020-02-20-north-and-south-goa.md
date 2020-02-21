@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-layout
 title: North and South Goa
 image-path: /images/tajmahal.jpg
 category: india

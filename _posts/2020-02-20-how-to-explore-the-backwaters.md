@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-layout
 title: How to explore the backwaters
 image-path: /images/tajmahal.jpg
 category: india

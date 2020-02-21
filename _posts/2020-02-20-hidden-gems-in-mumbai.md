@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-layout
 title: Hidden gems in Mumbai
 image-path: /images/tajmahal.jpg
 category: india

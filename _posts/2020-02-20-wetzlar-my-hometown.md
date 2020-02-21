@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post-layout
 title: Wetzlar - City of Optics
 image-path: /images/tajmahal.jpg
 category: germany

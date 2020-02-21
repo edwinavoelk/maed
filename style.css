@@ -53,13 +53,19 @@
   .padded-right { padding: 3.5rem 3rem 1rem 1rem; } /*-- nur rechts --*/
   .padded-destinations { padding: 5% 1%;}
 
+ .negative-margin { margin-top: -3rem;
+   background-color: white; }
+
+ .negative-margin-1 { margin-top: -1rem;}
+ .margin-top { margin-top: 2rem;}
+
   .bg-image {
     background-image: url('#');
     background-size: cover;
     background-position: center;
   }
 
-.bg-image-square {
+ .bg-image-square {
   min-height: 150px;
 }
 
@@ -71,29 +77,29 @@
   margin: 1rem auto;
   }
 
-.box > .bg-image {
+ .box > .bg-image {
   width: 100%;
   }
 
-.box > span {
+ .box > span {
   display: block;
 
   /* pad around text */
   padding: 0.5rem 1rem;
   }
 
-.square {
+ .square {
   /*  any set width  */
   width: 100%;
   }
 
-.square::after {
+ .square::after {
   content: "";
   display: block;
   padding-bottom: 100%;
   /* Relies on https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
   }
-  section.countries .bg-image {
+ section.countries .bg-image {
      padding: 0rem;
      height: 400px;
      border-radius: 2px;
@@ -115,7 +121,7 @@
   .tall-100 {  min-height: 100vh;  }
 
   .dark-bg      {  background-color: #3e432e; color: #f7f1e3;  }
-  .light-bg     {  background-color: rgb(241, 242, 246);  color: rgb(60,60,65)}
+  .light-bg     {  background-color: rgb(241, 242, 246);  color: rgb(120,120,125)}
   .featured-bg  {  background-color: #3e432e; color: rgb(241, 242, 246); margin: 2% 5%;    }
 
   .truncate { overflow: hidden; text-overflow: ellipsis; max-height: 12rem; }
@@ -331,11 +337,17 @@ img.clickable-box.bg-image {
 height: 100%;
 }
 
+  /* --------------- POPUPGALLERY------------------*/
+
+.popup-gallery .bg-image { min-height: 120px; }
+
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
   .mob-hide {
     display: none;
   }
+
+
 
   /* end media query */

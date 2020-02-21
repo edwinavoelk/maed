@@ -56,6 +56,9 @@
     background-position: center;
   }
 
+.bg-image-square {
+  min-height: 150px;
+}
 
   .box  {
   background-color: white;
@@ -101,7 +104,7 @@
    background-position: cover;
    border-radius: 2px;
    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
- } 
+ }
 
   .capped-width { width: 80%; margin: auto;}
 

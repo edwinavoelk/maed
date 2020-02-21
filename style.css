@@ -19,7 +19,10 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: rgb(120,120,125);
     margin: 2rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
+  }
+  a {
+    text-decoration: none;
   }
 
    /* this overrides the default padding and margin on gridlex elements */
@@ -35,10 +38,10 @@
     height: 150px;
   }
   .blogpost-box {
-    /* border: 1px solid grey; */
     width:  300px;
-    height: 250px;
+    font-weight: lighter;
   }
+
   .left     {  text-align: left;     }
   .right    {  text-align: right;    }
   .centered {  text-align: center;   }
@@ -81,7 +84,7 @@
 
 .square {
   /*  any set width  */
-  width: 90%;
+  width: 100%;
   }
 
 .square::after {
@@ -92,7 +95,7 @@
   }
   section.countries .bg-image {
      padding: 0rem;
-     height: 200px;
+     height: 400px;
      border-radius: 2px;
 
    }
@@ -132,7 +135,7 @@
   #footer-typography {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight:300;
-  
+
   }
 
   h2, h3  {
@@ -156,16 +159,25 @@
      margin-bottom: 0.8rem;
   }
 
-  p.small { line-height: normal; text-decoration: none; text-align:justify;}
+  /* .small p { line-height: 0.5rem; text-decoration: none; text-align:justify;} */
 
-  a.blogpost-box {
+  .blogpost-box span {
     text-decoration: none;
     color: inherit;
-
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:300;
+    letter-spacing: 4px;
+    font-size: 1.5rem;
   }
 
-  #countries-center {
-    text-align: center;
+  .countries a {
+    text-decoration: none;
+    color:inherit;
+  }
+
+  .text-in-box a {
+    ext-decoration: none;
+    color:inherit;
   }
 
   /* this makes sure that the last element in any container doesn't have margin-bottom */
@@ -224,6 +236,23 @@
   border-color: rgb(60, 60, 60);
 }
 
+.button-icons {
+  text-decoration: none;
+  color: #444c38;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.button-icons:hover {
+  color: #aab6a2;
+}
+
+
+.latest-blogpost:hover {
+  opacity: 0.5;
+}
 
 
 

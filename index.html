@@ -2,17 +2,17 @@
 layout: default
 title: MAED
 countries:
-  - name: germany
+  - name: Germany
     image-path: images/tajmahal.jpg
-  - name: india
+  - name: India
     image-path: images/tajmahal.jpg
-  - name: srilanka
+  - name: Sri Lanka
     image-path: images/tajmahal.jpg
-  - name: hungary
+  - name: Hungary
     image-path: images/tajmahal.jpg
-  - name: peru
+  - name: Peru
     image-path: images/tajmahal.jpg
-  - name: chile
+  - name: Chile
     image-path: images/tajmahal.jpg
 
 latest-blogpost:
@@ -33,7 +33,7 @@ latest-blogpost:
 
 <section class="grid-centered padded centered">
   <div class="col-8_sm-12">
-    <h2> This is a heading </h2>
+    <h2> Oh hello! Nice to sweet you! </h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
       dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
@@ -47,10 +47,12 @@ latest-blogpost:
   <!-- - - - - - - CTA COUNTRIES  - - - - - - - -  -->
 <section class="countries grid-spacebetween">
 {% for item in page.countries %}
-<a href="/{{item.name}}" class="col-2 blogpost-box">
+<a href="/{{item.name}}" class="col-4">
   <div class="box">
     <div class="bg-image square" style="background-image: url('{{ item.image-path }}')"></div>
-    <span id="countries-center">{{ item.name }}</span>
+    <div class="padded centered blogpost-box">
+      <span> {{ item.name }} </span>
+    </div>
   </div>
 </a>
 
@@ -80,62 +82,64 @@ latest-blogpost:
     <img src="images/IMG_1251-3.jpg" alt="">
   </div>
   <div class="col-6_sm-12 padded-3">
-    <h2> This is a heading </h2>
+    <h2> About </h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
       dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <a href="about.html" class="button"> Come say hello</a>
+      </div>
   </div>
 </section>
 
 
   <!-- - - - - - - CTA LATEST BLOGPOSTS 1  - - - - - - - -  -->
 
-<section class="grid padded">
+<section class="grid padded text-in-box">
 
-  <a href="#" class="col-6 blogpost-box grid">
+  <a href="#" class="col-6 blogpost-box grid latest-blogpost">
     <div class="col-4 padded bg-image">
       <p> NO. 1 </p>
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
     <div class="col-8 padded-right">
-      <p class="small"> {{page.latest-blogpost | truncate: 300 }} </p>
+      <p> {{page.latest-blogpost | truncate: 300 }} </p>
     </div>
   </a>
 
-  <a href="#" class="col-6 blogpost-box grid">
+  <a href="#" class="col-6 blogpost-box grid latest-blogpost">
     <div class="col-4 padded bg-image">
       <p> NO. 1 </p>
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
     <div class="col-8 padded-right">
-      <p class="small"> {{page.latest-blogpost | truncate: 300 }} </p>
+      <p> {{page.latest-blogpost | truncate: 300 }} </p>
     </div>
   </a>
 </section>
 
 <!-- - - - - - - CTA LATEST BLOGPOSTS 2  - - - - - - - -  -->
 
-<section class="grid padded">
-  <a href="#" class="col-6 blogpost-box grid">
+<section class="grid padded text-in-box">
+  <a href="#" class="col-6 blogpost-box grid latest-blogpost">
     <div class="col-4 padded bg-image">
       <p> NO. 1 </p>
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
     <div class="col-8 padded-right">
-      <p class="small"> {{page.latest-blogpost | truncate: 300 }} </p>
+      <p> {{page.latest-blogpost | truncate: 300 }} </p>
     </div>
   </a>
 
-  <a href="#" class="col-6 blogpost-box grid">
+  <a href="#" class="col-6 blogpost-box grid latest-blogpost">
     <div class="col-4 padded bg-image">
       <p> NO. 1 </p>
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
     <div class="col-8 padded-right">
-      <p class="small"> {{page.latest-blogpost | truncate: 300 }} </p>
+      <p> {{page.latest-blogpost | truncate: 300 }} </p>
     </div>
   </a>
 

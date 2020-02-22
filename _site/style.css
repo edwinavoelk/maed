@@ -50,7 +50,7 @@
   .padded-1 {  padding: 1rem;  }
   .padded-2 {  padding: 2rem 0rem;  } /*-- nur oben u unten, links und rechts auf line --*/
   .padded-3 {  padding: 3rem;  }
-  .padded-right { padding: 3.5rem 3rem 1rem 1rem; } /*-- nur rechts --*/
+  .padded-right { padding-right: 0.5rem; } /*-- nur rechts --*/
   .padded-destinations { padding: 5% 1%;}
 
  .negative-margin { margin-top: -3rem;
@@ -128,6 +128,44 @@
 
   .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+
+  .it-dot { list-style: disc;
+    border-left: 1px solid #aab6a2;
+    padding-left: 11px !important;
+    }
+
+  .text-box {
+    background-color: #aab6a2;
+    color: white;
+    padding:1rem;
+  }
+
+  .bump-right {
+    margin-top: 1rem;
+    margin-left:3rem;
+    margin-bottom: 1rem;
+    margin-right:-3rem;
+    z-index:2;
+  }
+
+  .bump-left {
+    margin-top: 1rem;
+    margin-left:-3rem;
+    margin-bottom: 1rem;
+    margin-right:3rem;
+    z-index:2;
+  }
+
+  .bump-up {
+    margin-top: -1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right:1rem;
+    z-index:2;
+  }
+
+
+
 
   /* ------------ General typography --------------*/
 
@@ -348,6 +386,25 @@ height: 100%;
     display: none;
   }
 
+  .mob-reduce {
+    width: 100%
+  }
+
+  .mob-no-pad {
+    padding: 0rem;
+  }
+
+  .bump-right,
+  .bump-left,
+  .bump-up {
+    margin:0;
+  }
+
+  .bg-image {
+    min-height: 30vh;
+  }
+
+  h2 { font-size: 1.7rem; }
 
 
   /* end media query */

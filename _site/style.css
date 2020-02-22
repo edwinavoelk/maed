@@ -256,7 +256,7 @@
 }
 
 .button:hover {
-  color: #aab6a2;
+  color: white;
 }
 
 .button.inverted {   /* this is for a button on a dark background */

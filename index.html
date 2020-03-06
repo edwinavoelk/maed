@@ -22,7 +22,7 @@ latest-blogpost:
 
 <!-- - - - - - - FIXED BANNER  - - - - - - - -  -->
 
-<section class="banner grid-center fixed">
+<section class="banner banner-mob grid-center fixed">
   <div class="col-6_sm-12-middle centered">
 
   </div>
@@ -47,9 +47,9 @@ latest-blogpost:
   <!-- - - - - - - CTA COUNTRIES  - - - - - - - -  -->
 <section class="countries grid-spacebetween" data-aos="fade-up">
 {% for item in page.countries %}
-<a href="/{{item.name}}" class="col-4_sm-12">
+<a href="/{{item.name}}" class="col-4_sm-6">
   <div class="box blogpost-box">
-    <div class="bg-image square" style="background-image: url('{{ item.image-path }}')"></div>
+    <div class="bg-image " style="background-image: url('{{ item.image-path }}')"></div>
     <div class="padded centered">
       <span> {{ item.name }} </span>
     </div>
@@ -111,7 +111,7 @@ latest-blogpost:
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
-    <div class="col-8_sm-12 padded-right">
+    <div class="col-8_sm-12 padded-right padded-top">
       <p> {{page.latest-blogpost | truncate: 300 }} </p>
     </div>
   </a>
@@ -122,7 +122,7 @@ latest-blogpost:
       <img src="http://www.instituteofcode.com/houdini.jpg" alt="">
     </div>
 
-    <div class="col-8_sm-12 padded-right">
+    <div class="col-8_sm-12 padded-right padded-top">
       <p> {{page.latest-blogpost | truncate: 300 }} </p>
     </div>
   </a>

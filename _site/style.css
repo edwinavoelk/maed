@@ -51,23 +51,21 @@
   .padded-2 {  padding: 2rem 0rem;  } /*-- nur oben u unten, links und rechts auf line --*/
   .padded-3 {  padding: 3rem;  }
   .padded-right { padding-right: 0.5rem; } /*-- nur rechts --*/
+  .padded-top { padding-top: 3%; }
   .padded-destinations { padding: 5% 1%;}
 
+ .margin-top { margin-top: 2rem;}
  .negative-margin { margin-top: -3rem;
    background-color: white; }
 
  .negative-margin-1 { margin-top: -1rem;}
- .margin-top { margin-top: 2rem;}
+
 
   .bg-image {
     background-image: url('#');
     background-size: cover;
     background-position: center;
   }
-
- .bg-image-square {
-  min-height: 150px;
-}
 
   .box  {
   background-color: white;
@@ -89,8 +87,8 @@
   }
 
  .square {
-  /*  any set width  */
   width: 100%;
+  height: 100%;
   }
 
  .square::after {
@@ -99,6 +97,7 @@
   padding-bottom: 100%;
   /* Relies on https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
   }
+
  section.countries .bg-image {
      padding: 0rem;
      height: 400px;
@@ -289,6 +288,15 @@
   font-size: 2rem;
 }
 
+.button-icons-footer {
+  padding-right: 1rem;
+  text-decoration: none;
+  color: #444c38;
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 2rem;
+}
+
 .button-icons:hover {
   color: #aab6a2;
 }
@@ -379,7 +387,7 @@ height: 100%;
 
 .popup-gallery .bg-image { min-height: 120px; }
 
-/* This media query kicks into action at the gridlex sm breakpoint */
+/* This MEDIA QUERY kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
   .mob-hide {
@@ -400,9 +408,24 @@ height: 100%;
     margin:0;
   }
 
-  .bg-image {
-    min-height: 30vh;
-  }
+/* Damit Bilder in responsive kleiner  werden und nicht in die Länge gezogen */
+.square {
+ width: 50%;
+ }
+
+.square::after {
+ content: "";
+ display: block;
+ padding-bottom: 100%;
+ /* Relies on https://spin.atomicobject.com/2015/07/14/css-responsive-square/ */
+ }
+
+ section.countries .bg-image {
+   padding: 0rem;
+   height: 200px;
+   border-radius: 2px;
+
+ }
 
   h2 { font-size: 1.7rem; }
 
